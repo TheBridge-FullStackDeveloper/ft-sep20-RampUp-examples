@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="https://w3schools.com/action_page.php" method="GET">
+        <label for="userName">Nombre de usuario</label>
+        <input type="text" id="userName" name="userName" placeholder="Introduzca su nombre de usuario" disabled value="Miiguel">
+
+        <label for="">Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="Introduzca su contraseña">
+
+        <label for="email">Correo Electrónico</label>
+        <input type="email" name="email" id="email" placeholder="Introduzca su email">
+
+        <label for="">Selecciones género</label>
+        <input type="checkbox" name="man" id="man"  value="man">
+        <label for="man">Hombre</label>
+        <input type="checkbox" name="woman" id="woman" value="woman">
+        <label for="woman">Mujer</label>
+        <input type="checkbox" name="other" id="other" value="other">
+        <label for="other">Otro</label>
+
+        <label for="">Selecciones género</label>
+        <input required type="radio" name="gender" id="r_man" value="man">
+        <label for="r_man">Hombre</label>
+        <input type="radio" name="gender" id="r_woman" value="woman">
+        <label for="r_woman">Mujer</label>
+        <input type="radio" name="gender" id="r_other" value="other">
+        <label for="r_other">Otro</label>
+
+        <label for="search">Búsqueda</label>
+        <input type="search" name="search" id="search" placeholder="Introduzca su busqueda">
+
+        <label for="select">Seleccione su ciudad</label>
+        <select name="select" id="select">
+            <option value="">---- Seleccione una opción ----</option>
+            <option value="28">Madrid</option>
+            <option value="3">Barcelona</option>
+        </select>
+
+        <label for="">Seleccione ciudad</label>
+        <input list="cities">
+        <datalist id="cities">
+            <option value="madrid">Madrid</option>
+            <option value="barcelona">Barcelona</option>
+        </datalist>
+
+        <label for="comments"></label>
+        <textarea name="comments" id="comments" cols="10" rows="10" maxlength="10"></textarea>
+        <input type="hidden" name="relevantInfo" value="El usuario me cae mal">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <a href="/">Ir a welcome</a>
+</body>
+</html>
