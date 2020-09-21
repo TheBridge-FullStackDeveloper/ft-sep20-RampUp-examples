@@ -1,0 +1,35 @@
+/* selector {
+    regla: valor;
+} */
+
+body {
+    /* background: #333; */
+    margin: 0; /* Todos los márgenes a 0 */
+    margin: 10 0; /* Márgenes arriba y abajo a 10 e izquierda y derecha a 0 */
+    margin: 10 20 30 40; /* Arriba, derecha, abajo izquierda se aplican en ese orden */
+}
+
+p, h1 {
+    color: red;
+    background: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+#specialHalf {
+    width: 50%;
+    background: purple;
+}
+
+#specialHalf p {
+    background: transparent;
+}
+
+div p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.half {
+    width: 50%;
+}
+
