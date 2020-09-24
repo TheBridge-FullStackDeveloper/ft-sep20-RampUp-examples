@@ -1,0 +1,48 @@
+:root {
+    --darkGray: #f00;
+    --background: #333;
+    --mainDelay: 0.1s;
+    --mainAnimation: name 2s var(--mainDelay) infinite linear alternate;
+    --size: 10px;
+}
+
+body {
+    height: 12000px;
+    width: 120000px;
+}
+@keyframes name {
+    0% {
+
+    }
+    100% {
+        transform: translate(100px, 0);
+    }
+}
+
+p {
+    color: var(--darkGray);
+    background-color: var(--background);
+    /* animation: var(--mainAnimation); */
+}
+
+div {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    padding: 40px;
+    /* margin: 20px; */
+    border: 1px solid black;
+    background-color: #0f0;
+    top: 0px;
+    position: absolute;
+    z-index: 0;
+    /* animation: var(--mainAnimation); */
+}
+
+input[type="text"] {
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+    margin-top: 200px;
+    padding: 0 10px;
+}

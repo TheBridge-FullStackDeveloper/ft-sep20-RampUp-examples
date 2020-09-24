@@ -1,0 +1,37 @@
+div.flex {
+    display: flex;
+    height: calc(100vh - 16px);
+    width: calc(100vw - 16px);
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #f007;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: #4f84;
+}
+
+div:nth-child(odd) {
+    height: 200px;
+    flex-grow: 5;
+}
+
+div#special {
+    order: 0;
+    width: unset;
+}
+
+div:nth-child(2) {
+    align-self: flex-end;
+}
+
+p {
+    margin: 10px;
+    /* width: 200px;
+    height: 200px; */
+}
