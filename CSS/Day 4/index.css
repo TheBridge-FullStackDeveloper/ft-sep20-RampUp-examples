@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav a {
+    margin: 10px;
+    color: white;
+}
+
+header img {
+    height: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newDisplayer div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.newDisplayer section {
+    max-width: 400px;
+    border: 1px solid #333;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.newDisplayer section h2, .newDisplayer h1 {
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+    padding: 25px;
+}
+
+@media only screen and (min-width: 1100px) and  (max-width: 1200px) {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        width: 25%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newDisplayer {
+        width: 70%;
+    }
+}
+#easterEgg {
+    display: none;
+}
+@media screen and (min-width: 360px) and (max-width: 360px) and (any-hover){
+    #easterEgg {
+        display: block;
+    }
+}
