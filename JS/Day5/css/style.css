@@ -1,0 +1,15 @@
+.btn {
+  padding: 10px;
+  border-radius: 2px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+}
+
+.red {
+  background-color: crimson;
+}
+
+.green {
+  background-color: green;
+}
