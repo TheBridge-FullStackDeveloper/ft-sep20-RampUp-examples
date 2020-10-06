@@ -18,6 +18,8 @@ fruits.map( function(item, index) {
 let myButton = document.querySelector("#btn1");
 //let allButtons = document.querySelectorAll(".btn.red");
 
+let myForm = document.querySelector("#dataForm");
+
 // ------------------ Handler functions ------------------
 
 function toggle(myButton, myState) {
@@ -41,6 +43,30 @@ function toggle(myButton, myState) {
 // ------------------ Event handlers ------------------
 
 // Binding
-myButton.addEventListener("click", function() {
+myButton.addEventListener("click", function () {
   enabled = toggle(myButton, enabled);
 });
+
+myForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  // Validate ...
+  if (checkForm()) {
+    event.target.submit();
+  }
+  else {
+    // Feedback to user...
+  }
+});
+
+function checkForm() {
+  // Si el nombre no está vacío...
+  if ((document.getElementById("firstname").value != "") &&
+      // Si los términos están aceptados...
+      (document.getElementById("tos").checked)) {
+      return true;
+  }
+  else {
+    return false;
+  }
+}

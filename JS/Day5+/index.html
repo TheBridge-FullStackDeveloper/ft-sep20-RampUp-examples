@@ -12,11 +12,14 @@
 
   <ul id="fruits"></ul>
 
-  <form action="/" method="post">
+  <form action="/procesarDatos" method="post" id="dataForm">
     <label for="firstname">Tu nombre:</label>
-    <input type="text" name="firstname" id="firstname">
+    <input type="text" name="firstname" id="firstname" placeholder="Escriba aquí su nombre">
+    <input type="text" name="email" id="email" placeholder="Escriba aquí su email">
 
-    <input type="submit" value="Enviar datos">
+    <input type="checkbox" name="tos" id="tos" value="ok">Acepto
+
+    <input type="submit" value="Enviar datos" id="mySubmit">
   </form>
 
   <!-- <script src="js/main.js"></script> -->
